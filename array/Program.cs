@@ -84,41 +84,67 @@ namespace array
             #endregion
             #region array ornek4
 
-            
-            string[] gunler = new string[7] { "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar" };
-            bool devam = true;
-            while (devam)
-            {
-                Console.Write("Kaçıncı Gün: ");
-                byte gun = Convert.ToByte(Console.ReadLine());
 
-                if (gun <= 7 && gun >= 1)
-                {
-                    Console.WriteLine(gunler[gun - 1]);
-                }
-                else
-                {
-                    Console.WriteLine("Bir haftada 7 Gün Vardır");
+            //            string[] gunler = new string[7] { "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar" };
+            //            bool devam = true;
+            //            while (devam)
+            //            {
+            //                Console.Write("Kaçıncı Gün: ");
+            //                byte gun = Convert.ToByte(Console.ReadLine());
 
-                }
-                Console.WriteLine("Devam etmek istiyorsan \"e\" tuşuna basın.");
-                char c = Convert.ToChar(Console.ReadLine());
+            //                if (gun <= 7 && gun >= 1)
+            //                {
+            //                    Console.WriteLine(gunler[gun - 1]);
+            //                }
+            //                else
+            //                {
+            //                    Console.WriteLine("Bir haftada 7 Gün Vardır");
 
-                if (c == 'e')
-                {
-                    devam = true;
-                    Console.Clear();
-                }
+            //                }
+            //                Console.WriteLine("Devam etmek istiyorsan \"e\" tuşuna basın.");
+            //                char c = Convert.ToChar(Console.ReadLine());
 
-                else
-                {
-                    devam = false;
-                }
+            //                if (c == 'e')
+            //                {
+            //                    devam = true;
+            //                    Console.Clear();
+            //                }
+
+            //                else
+            //                {
+            //                    devam = false;
+            //                }
 
 
-                Console.ReadKey();
-#endregion
-            }
+            //                Console.ReadKey();
+            #endregion
+
+            #region 2boyutlu diziler
+            //int[,] sinavlar = new int[2, 3];
+            //sinavlar[0, 0] = 1;
+            //sinavlar[1, 0] = 20;
+            //sinavlar[0, 1] = 2;
+            //sinavlar[1, 1] = 30;
+            //sinavlar[0, 2] = 3;
+            //sinavlar[1, 2] = 40;
+            //////for (int i = 0; i < 3; i++)
+            //////{
+            //////    Console.WriteLine(sinavlar[0, i] + "-" + sinavlar[1, i]);
+            //////}
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.WriteLine(sinavlar[i, j]);
+            //    }
+
+            //}
+            //Console.ReadKey();
+            #endregion
+            #region BirÖncekinin tersi
+
+            #endregion
         }
     }
-}
+    }
+
